@@ -1,0 +1,71 @@
+/* Resetowanie domyślnych stylów */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Podstawowe style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh; /* Ustawienie minimalnej wysokości na całą wysokość widocznego obszaru */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Przezroczyste tło nagłówka */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    flex: 1; /* Rozciągnięcie sekcji, aby wypełnić dostępne miejsce */
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Przezroczyste tło stopki */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto; /* Ustawienie stopki na dole strony */
+}
+
+/* Tło z obrazem stada koni */
+.background-horses {
+    background-image: url('z3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Style dla sekcji galerii */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px; /* Szerokość obrazów w galerii */
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Cień wokół obrazów */
+}
